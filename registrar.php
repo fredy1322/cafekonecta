@@ -25,7 +25,7 @@ $resultado2 = $conexion->query($masvendido2) or die (mysqli_error($conexion));
 <div class="contenedortitulo"  >
     <div class="titulotablas"  >
         <h5 class="tablas"> <b> Modulo de ventas<br>  <small id="fileHelp" class="text-muted">Seleccione el producto y las cantidades</small>  </div>   
-            </b></h5> </b></h5> Actualmente el articulo con mas stock es: <b> <?php echo $masvendido; ?></b>  </div>
+            </b></h5> </b></h5> Actualmente el articulo mas vendido es: <b> <?php echo $masvendido; ?></b>  </div>
             
             <p style="margin-top:120px">  
 
