@@ -1,0 +1,14 @@
+// Articulo con mas stock
+SELECT  nom_producto
+	 , max(stock) stock
+FROM   inventario
+GROUP  BY nom_producto
+ORDER  BY stock DESC LIMIT 1;
+
+// Articulo mas vendido
+
+SELECT  nom_producto
+	 , SUM(unidadesvendidas) unidadesvendidas
+FROM   VENTAS
+GROUP  BY nom_producto
+ORDER  BY unidadesvendidas DESC LIMIT 1;
